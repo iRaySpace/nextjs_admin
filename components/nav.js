@@ -17,13 +17,6 @@ export default function Nav({ current }) {
       <Pane>
         <Button
           marginRight={15}
-          appearance={current === "Home" ? "primary" : "minimal"}
-          onClick={() => current !== "Home" && router.push("/admin/")}
-        >
-          Home
-        </Button>
-        <Button
-          marginRight={15}
           appearance={current === "Manage" ? "primary" : "minimal"}
           onClick={() => current !== "Manage" && router.push("/admin/manage")}
         >
